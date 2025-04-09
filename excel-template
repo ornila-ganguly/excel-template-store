@@ -1,1 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Template Shop</title>
+  <!-- Tailwind CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .product-card:hover {
+      transform: translateY(-6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-6 shadow sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <h1 class="text-3xl font-bold">📊 My Template Shop</h1>
+      <nav class="space-x-6">
+        <a href="#products" class="hover:underline">Shop</a>
+        <a href="#about" class="hover:underline">About</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 bg-gradient-to-r from-blue-50 to-blue-100">
+    <h2 class="text-5xl font-bold text-blue-700 mb-4">Automate Your Work with Professional Templates</h2>
+    <p class="text-xl text-gray-600">Excel and Google Sheet templates for data-driven professionals</p>
+    <a href="#products" class="mt-8 inline-block bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Start Shopping</a>
+  </section>
+
+  <!-- Products Grid -->
+  <main id="products" class="max-w-7xl mx-auto px-6 py-20">
+    <h3 class="text-3xl font-bold mb-10 text-center text-gray-800">Our Featured Templates</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="product-card bg-white rounded-2xl shadow p-5 border">
+        <img src="/images/sales-template.png" alt="Sales Dashboard" class="w-full h-48 object-cover rounded">
+        <h4 class="text-xl font-semibold mt-4">📈 Sales Dashboard</h4>
+        <p class="text-gray-600 mt-2 text-sm">Visual dashboard for monthly/yearly KPIs. Fully automated.</p>
+        <div class="flex justify-between items-center mt-4">
+          <span class="font-bold text-lg">$9.99</span>
+          <a href="https://www.payoneer.com/request-payment?amount=9.99&description=Sales+Dashboard" target="_blank" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- About Section -->
+  <section id="about" class="bg-blue-50 py-20 px-6 text-center">
+    <h3 class="text-3xl font-bold text-gray-800 mb-4">About Me</h3>
+    <p class="max-w-2xl mx-auto text-gray-600 text-lg">
+      I'm a data analyst and template designer from Bangladesh. I create practical, time-saving Excel and Google Sheet tools to help businesses and professionals work smarter, not harder.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 bg-white text-center">
+    <h3 class="text-3xl font-bold text-gray-800 mb-6">Get In Touch</h3>
+    <p class="text-gray-600 mb-6">Need a custom template? Want to collaborate? Reach out anytime!</p>
+    <a href="mailto:yourname@example.com" class="bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700">Email Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white text-center p-6">
+    &copy; 2025 Your Name. All rights reserved.
+  </footer>
+</body>
+</html>
 
